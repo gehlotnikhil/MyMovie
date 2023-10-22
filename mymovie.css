@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+.c-white {
+    color: white !important;
+}
+
+.c-black {
+    color: black !important;
+}
+.form-control {
+    width: 15pc;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+.img-size {
+    height: 600;
+    width: 1400;
+}
+
+.carousel-inner {
+    /*Image slide*/
+    position: relative;
+    width: 100%;
+    height: 587px;
+    overflow: hidden;
+}
+
+.logo {
+    color: red;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+p.btn.btn-outline-success.c-white {
+    margin: 0;
+    padding: 6px 31px 0px 0px;
+}
+
+.f_video {
+    height: 240px;
+    width: 35%;
+    margin: 22px 7%;
+    /* margin: 3% auto; */
+}
+
+.movie_home {
+    height: 160vh;
+    width: 100%;
+    background: #b79b7285;
+}
+
+.movie_home2 {
+    height: 185vh;
+    width: 100%;
+    background: #b79b7285;
+}
+
+.center {
+    text-align: center;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.hover {
+    color: white;
+}
+
+.hover:hover {
+    color: red;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link {
+    cursor: grab;
+}
+
+.home_image {
+    height: 28pc;
+    margin: 4% 5%;
+    width: 18pc;
+    /* margin: 20px 45px; */
+}
+
+.logo_hover:hover,
+.logo_hover:visited {
+    color: red;
+}
+
+h1.h-primary.center {
+    position: relative;
+    top: 15px;
+}
+
+/* About */
+#founder {
+    padding-top: 34px;
+    height: 20pc;
+    display: block;
+    margin: auto;
+}
+
+div#About {
+    background: #b79b7285;
+    height: 125vh;
+    color: rgb(0, 0, 0);
+}
+
+#f_name {
+    font-family: 'Itim', cursive;
+    text-align: center;
+}
+
+p {
+    margin: 0pc 7pc;
+    text-indent: 32px;
+}
+
+/* Clients */
+div#client {
+    background: #b79b7285;
+    height: 25vh;
+}
+
+.client_logo {
+    margin: 56px 0px;
+    /* width: 25%; */
+    /* height: 14.4pc; */
+    width: 24%;
+    height: 63%;
+    /* width: 230px; */
+}
+
+div#client {
+    background: #b79b7285;
+    height: 60vh;
+}
+
+/* Contact Us */
+
+#Contact_us {
+    height: 100vh;
+    background: #b79b7285;
+}
+
+.m1 {
+    color: red;
+    margin: 0px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}

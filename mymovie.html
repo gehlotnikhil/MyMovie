@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="mymovie.css">
+    <style>
+        .all {
+            width: 34pc;
+            height: 2pc;
+            border-radius: 5px;
+            border: 1px solid black;
+            margin: 0px 0px 19px 0px;
+        }
+        p.btn.btn-outline-success.c-white {
+    margin: 0;
+    padding: 6px 24px 0px 0px;
+}
+        #c_us {
+    display: block;
+    width: 34pc;
+    margin: 2pc auto;
+}
+
+        label {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        #new {
+    display: none;
+    background-color: rgb(34 26 23);
+    height: 16.3vh;
+}
+pre{
+    display: inline;
+}
+        .bt {
+            width: 24.6%;
+            display: inline-block;
+            color: white;
+            border-right: 1px solid black;
+        }
+
+        .mv_1,
+        .mv_2,
+        .mv_3,
+        .mv_4 {
+            display: block;
+            margin-bottom: 1px;
+            margin-left: 2%;
+        }
+
+        #second {
+            display: none;
+        }
+        /* .form-control {
+
+    width: 39pc;
+
+} */
+pre#acc {
+    margin: 0;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark c-white sticky">
+            <div class="container-fluid c-white ">
+                <a class="navbar-brand logo logo_hover " href="#">MyMovie</a>
+                <button class="navbar-toggler c-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon c-white"></span>
+                </button>
+                <div class="collapse navbar-collapse c-white" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 c-white">
+                        <li class="nav-item ">
+                            <a class="nav-link   hover" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item c-white ">
+                            <a class="nav-link  hover" href="#About">About</a>
+                        </li>
+                        <li class="nav-item c-white ">
+                            <a class="nav-link   hover" href="#Contact_us" role="button">Contact Us </a>
+                        </li>
+                        <li class="nav-item c-white ">
+                            <a class="nav-link  hover" href="index.html">Sign Out</a>
+                        </li>
+                        <li class="nav-item c-white ">
+                            <pre class="nav-link  hover" id = "acc"></pre>
+                        </li>
+                    </ul>
+                    <form class="d-flex " role="search">
+                        <input class="form-control me-2 " id = "searching" onclick="enable()" type="search" placeholder="Enter a Movie Name: "
+                            aria-label="Search">
+                        <p class="btn btn-outline-success c-white" onclick="f1()"  type="submit">Search</p>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <section id="new">
+            <div class="bt">
+                <p class="m1">Action</p>
+                <p onclick="jump('pathan')" class="mv_1">Pathan</p>
+                <p onclick="jump('brahmastra')" class="mv_1">Brahmastra</p>
+                <p onclick="jump('kgf2')" class="mv_1">KGF 2</p>
+            </div>
+            <div class="bt">
+                <p class="m1">Horror</p>
+                <p onclick="jump('annabelle')" class="mv_2">Annabelle</p>
+                <p onclick="jump('thenun')" class="mv_2">The Nun</p>
+                <p onclick="jump('theconjuring')" class="mv_2">The Conjuring</p>
+            </div>
+            <div class="bt">
+                <p class="m1">Comedy</p>
+                <p onclick="jump('happynewyear')" class="mv_3">Happy New Year</p>
+                <p onclick="jump('housefull4')" class="mv_3">Housefull 4</p>
+                <p onclick="jump('sonofsardaar')" class="mv_3">Son Of Sardaar</p>
+            </div>
+            <div class="bt">
+                <p class="m1">Drama</p>
+                <p onclick="jump('ramsetu')" class="mv_4">Ram Setu</p>
+                <p onclick="jump('jersey')" class="mv_4">Jersey</p>
+                <p onclick="jump('laalsinghchaddha')" class="mv_4">Laal Singh Chaddha</p>
+            </div>
+        </section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <a href="video/Bhajrangi bhaijaan full movie(360P).mp4"><img src="image/pathan.png"
+                            class="d-block w-100 img-size" alt="..."></a>
+
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <a href="video/Full movie DREAM GIRL(360P).mp4"> <img src="image/kgf2.png"
+                            class="d-block w-100 img-size" alt="..."></a>
+
+                </div>
+                <div class="carousel-item">
+                    <a
+                        href="video/Student Of The Year 2 Full Movie In Hindi HD __ Tiger Shroff_Ananya Pandey Latest Movie 2021(360P).mp4">
+                        <img src="image/brahmastra.png" class="d-block w-100 img-size" alt="..."></a>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <main>
+            <div class="movie_home" id="Home">
+                <h1 class="h-primary center">Home</h1>
+                <video
+                    src="video/Panipat Full Movie Hindi 2019    Sanjay Dutt_ Arjun Kapoor_ Kriti Sanon Hindi Movie(360P).mp4"
+                    controls muted class="f_video" poster="image/baagi2.png"></video>
+                <video
+                    src="video/Student Of The Year 2 Full Movie In Hindi HD __ Tiger Shroff_Ananya Pandey Latest Movie 2021(360P).mp4"
+                    controls muted class="f_video" poster="image/brahm.png"></video>
+                <video src="video/Full movie DREAM GIRL(360P).mp4" controls muted class="f_video"
+                    poster="image/img1.png"></video>
+                <video
+                    src="video/Doraemon_ Nobita Chronicle of The Moon Explerration Full Movie In Hindi  new movie _subscribe _like(360P).mp4"
+                    controls muted class="f_video" poster="image/pathan.png"></video>
+                <video src="video/Full movie DREAM GIRL(360P).mp4" controls muted class="f_video"
+                    poster="image/bahubali2.png"></video>
+                <video
+                    src="video/Panipat Full Movie Hindi 2019    Sanjay Dutt_ Arjun Kapoor_ Kriti Sanon Hindi Movie(360P).mp4"
+                    controls muted class="f_video" poster="image/kgf2.png"></video>
+            </div>
+            </br>
+            <div class="movie_home2">
+                <h1 class="h-primary center">Watch Your Favourite Show</h1>
+                <a href="tmkoc.html" class="home2"><img src="image/tmkoc.png" alt="" srcset="" class="home_image"
+                        id="homeM1"></a>
+                <a href="aladin.html" class="home2"><img src="image/aladin.png" alt="" srcset="" class="home_image"
+                        id="homeM2"></a>
+                <a href="kota.html" class="home2"><img src="image/kota.png" alt="" srcset="" class="home_image"
+                        id="homeM3"></a>
+                <a href="cricket.html" class="home2"><img src="image/cricket.png" alt="" srcset="" class="home_image"
+                        id="homeM4"></a>
+                <a href="fifa.html" class="home2"><img src="image/fifa.png" alt="" srcset="" class="home_image"
+                        id="homeM5"></a>
+                <a href="familyman.html" class="home2"><img src="image/familyman.png" alt="" srcset="" class="home_image"
+                        id="homeM6"></a>
+            </div>
+            </br>
+            <div id="About">
+                <h1 class="h-primary center">About</h1>
+
+                <img id="founder" src="image/founder.png" alt="">
+                <h5 id="f_name">Albert Kevin</br> CEO and Founder of MyMovie.Inc</h5>
+                </br>
+                <p>MyMovie, in full MyMovie, Inc., media-streaming and video-rental company founded in 1997 by American
+                    entrepreneurs Reed Hastings and Marc Randolph. It is also involved in the creation of original
+                    programming. Corporate headquarters are in Los Gatos, California.
+
+                    In 1999 MyMovie began offering an online subscription service through the Internet. Subscribers
+                    chose
+                    movie and television titles from MyMovie’s Web site; the shows were then mailed to customers in the
+                    form
+                    of DVDs, along with prepaid return envelopes, from one of more than 100 distribution centres.
+                    Although
+                    customers typically rented for a flat monthly fee as many movies per month as they wished, the
+                    number of
+                    DVDs in their possession at any one time was limited according to their subscription plans. MyMovie
+                    had
+                    tens of thousands of movie titles in its catalog.
+
+                    Britannica Quiz Pop Culture Quiz
+                    In 2006 MyMovie launched the $1 million MyMovie Prize contest to see if anyone could improve by 10
+                    percent its recommendation system, an algorithm for predicting an individual’s movie preferences
+                    based
+                    on previous rental data. Three years later the prize was awarded to BellKor’s Pragmatic Chaos, a
+                    team
+                    made up of seven mathematicians, computer scientists, and engineers from the United States, Canada,
+                    Austria, and Israel.
+                    In 2007 Netflix began offering subscribers the option to stream some of its movies and television
+                    shows
+                    directly to their homes through the Internet. For most subscription plans, the streaming service was
+                    unlimited. Netflix subsequently partnered with manufacturers of various consumer electronics
+                    products,
+                    including video game consoles and Blu-ray Disc players, in order to enable its videos to be streamed
+                    over an Internet connection to those devices.
+
+                </p>
+            </div>
+            </br>
+            <div id="client">
+                <h1 class="h-primary center">Our Client</h1>
+                <img class="client_logo" id="c1" src="image/google.png" alt="" srcset="">
+                <img class="client_logo" id="c2" src="image/apple.png" alt="" srcset="">
+                <img class="client_logo" id="c3" src="image/tcs.png" alt="" srcset="">
+                <img class="client_logo" id="c4" src="image/wipro.png" alt="" srcset="">
+
+            </div>
+            </br>
+            <div id="Contact_us">
+                <h1 class="h-primary center">Contact Us</h1>
+                </br>
+                <div id="c_us">
+                    <form>
+                        <div class="I1">
+                            <label for="nam">Name:</label>
+                            <input type="text" class="all" name="nam" id="nam">
+                        </div>
+                        <div class="I3">
+                            <label for="ag">Age: </label>
+                            <input type="number" class="all" name="ag" id="ag">
+                        </div>
+                        <div class="I2">
+                            <label for="emai">Email: </label>
+                            <input type="email" class="all" name="emai" id="emai">
+                        </div>
+                        <div class="I4">
+                            <label for="des">Query: </label>
+                            <input type="text" class="all" name="des" id="des">
+                        </div>
+                        <div class="I5">
+                            <input type="submit" class="all" id="sub" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </main>
+    <footer>
+        <div>
+            Copyright &copy; www.mymovie.com. All rights reserved!
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="mymovie.js"></script>
+
+
+
+</body>
+
+</html>

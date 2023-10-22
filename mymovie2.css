@@ -1,0 +1,217 @@
+.sections{
+    display: none;
+    background: url("image/space.jpg");
+
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+p.btn.btn-outline-success.c-white {
+    margin: 0px 0px 0px 15px;
+}
+
+.logo {
+    color: red;
+    width: 7rem;
+    margin-left: 1%;
+    width: 8%;
+    font-weight: 600;
+    /* margin-left: 8px; */
+    font-size: 1.5rem;
+}
+
+.logo_hover:hover,
+.logo_hover:visited {
+    color: red;
+}
+
+nav {
+    background-color: #323030;
+}
+#signIn {
+    background-color: #323030;
+    border: none;
+    padding: 5px 17px 5px 17px;
+    color: white;
+    width: 8%;
+    margin: 0px 0px 0px 5%;
+}
+input#field {
+    width: 60vw;
+
+}
+
+form {
+    display: flex;
+    width: 67%;
+    flex-direction: row;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+.m1 {
+    color: red;
+    margin: 0px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.bt {
+    width: 24.6%;
+    display: inline-block;
+    color: white;
+    border-right: 1px solid black;
+}
+
+.mv_1,
+.mv_2,
+.mv_3,
+.mv_4 {
+    display: block;
+    margin-bottom: 1px;
+    margin-left: 2%;
+}
+
+#new {
+    display: none;
+    background-color: rgb(34 26 23);
+    height: 16.3vh;
+}
+
+img {
+    height: 16pc;
+    width: 73%;
+    float: right;
+}
+
+section#film {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.box {
+    width: 50%;
+    border: 1px solid black;
+    /* background: #c1c1c1; */
+}
+
+h1.h-primary {
+    font-size: 41px;
+    /* font-size: 300%; */
+    height: 108px;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 44px;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+button#watch {
+    font-weight: 500;
+    /* top: 42%; */
+    font-size: 18px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid black;
+    padding: 4px 28px;
+    border-radius: 20px;
+    /* left: 69%; */
+}
+
+
+div#film-box2 {
+    width: 49.7%;
+    text-align: end;
+    display: inline-block;
+}
+.film2-box {
+
+
+}
+div#film-box1 {
+    display: inline-block;
+    width: 49.9%;
+
+}
+div#film-box2 {
+    width: 49.9%;
+    display: inline-block;
+    width: 49%;
+
+
+}
+section#film2 {
+    height: 75vh;
+    flex-direction: row;
+    display: flex;
+    background-color: #211f1f;
+    color: white;
+}
+pre#acc {
+    position: absolute;
+    margin: 0;
+    color: white;
+    top: 19px;
+    right: 16px;
+}
+
+#film-box1
+{
+}
+
+#img2 {
+    height: 21pc;
+    width: 12pc;
+}
+#f_box
+{
+    display: flex;
+    flex-direction: row;
+}
+.f_b {
+    margin: 5px 21px 33px 0px;
+}
+button.btnn {
+    margin-right: 21px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+div#film-box2 {
+    padding: 45px 18px 0px 0px;
+}
+span#sub {
+    font-size: 21px;
+    font-weight: bolder;
+}
+.circle {
+    background: black;
+    color: white;
+    border: 5px solid white;
+    padding: 1.5px;
+    border-radius: 15px;
+}
+.inside {
+    margin: 24px 0px;
+}
+#star {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+input#comment {
+    border: 1px solid black;
+    height: 1.7pc;
+    border-radius: 5px;
+}
+#sec1{
+}

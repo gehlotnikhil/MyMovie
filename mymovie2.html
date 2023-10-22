@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMovie | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="mymovie2.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  c-white sticky">
+        <pre class="nav-link  hover" id = "acc"></pre>
+        <a class="navbar-brand logo logo_hover " href="#">MyMovie</a>
+        <form class="search" role="search">
+            <input class="form-control" onclick="enable()" id="field"  type="search" placeholder="Enter a Movie Name: "
+                aria-label="Search">
+                <p class="btn btn-outline-success c-white" onclick="f1()"  type="submit">Search</p>
+            </form>
+
+        <button onclick="sign()" id="signIn">Sign Out</a>
+
+
+    </nav>
+    <section id="new">
+        <div class="bt">
+            <p class="m1">Action</p>
+            <p onclick="jump('pathan')" class="mv_1">Pathan</p>
+            <p onclick="jump('brahmastra')" class="mv_1">Brahmastra</p>
+            <p onclick="jump('kgf2')" class="mv_1">KGF 2</p>
+        </div>
+        <div class="bt">
+            <p class="m1">Horror</p>
+            <p onclick="jump('annabelle')" class="mv_2">Annabelle</p>
+            <p onclick="jump('thenun')" class="mv_2">The Nun</p>
+            <p onclick="jump('theconjuring')" class="mv_2">The Conjuring</p>
+        </div>
+        <div class="bt">
+            <p class="m1">Comedy</p>
+            <p onclick="jump('happynewyear')" class="mv_3">Happy New Year</p>
+            <p onclick="jump('housefull4')" class="mv_3">Housefull 4</p>
+            <p onclick="jump('sonofsardaar')" class="mv_3">Son Of Sardaar</p>
+        </div>
+        <div class="bt">
+            <p class="m1">Drama</p>
+            <p onclick="jump('ramsetu')" class="mv_4">Ram Setu</p>
+            <p onclick="jump('jersey')" class="mv_4">Jersey</p>
+            <p onclick="jump('laalsinghchaddha')" class="mv_4">Laal Singh Chaddha</p>
+        </div>
+    </section>
+    <section id="sec1" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/pathan.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Pathan</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Pathan</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/pathan2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Adventure</button>
+                            <button class="btnn">Action</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Siddharth Anand</span></div>
+                        <div class="f_b" id="f_b2">Star: Shah Rukh Khan </div>
+                        <div class="f_b" id="f_b4">Production: Yash Raj Film</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 870cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </section>
+    <section id="sec2" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/brahmastra.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Brahmastra</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Brahmastra: Part 1 - Shiva </h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/brahmastra_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Mystery</button>
+                            <button class="btnn">Drama</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Ayan Mukerji</span></div>
+                        <div class="f_b" id="f_b2">Star: Ranbir Kapoor</div>
+                        <div class="f_b" id="f_b4">Production: Drama Productions</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 480cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    </section>
+    <section id="sec3" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/kgf2.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">KGF - 2</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">KGF - 2</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/kgf2_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Crime</button>
+                            <button class="btnn">Action</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Prashanth Neel </span></div>
+                        <div class="f_b" id="f_b2">Star: Naveen Kumar </div>
+                        <div class="f_b" id="f_b4">Production: Hombale Films</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 1440cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec4" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/annabelle_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Annebelle Comes home</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Annebelle Comes home</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/annebelle_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Horror</button>
+                            <button class="btnn">Drama</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Gary Dauberman</span></div>
+                        <div class="f_b" id="f_b2">Star: john Form</div>
+                        <div class="f_b" id="f_b4">Production: New Line Cinema </div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 789cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec5" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/nun_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">The NUN</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">The NUN</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/nun_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Horror</button>
+                            <button class="btnn">Drama</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Gary Dauberman</span></div>
+                        <div class="f_b" id="f_b2">Star: Demian Bichir</div>
+                        <div class="f_b" id="f_b4">Production: Erors PRoduction</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 432cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    </section>
+    <section id="sec6" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/conjuring_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">The Conjuring</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">The Conjuring</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/cunjuring_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Horror</button>
+                            <button class="btnn">Drama</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Chad Hayes</span></div>
+                        <div class="f_b" id="f_b2">Star: Patrick Wilson</div>
+                        <div class="f_b" id="f_b4">Production: The Safron Company</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 987cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    </section>
+    <section id="sec7" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/happy_new_year_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Happy New Year</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Happy New Year</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/happy_new_year_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Comedy</button>
+                            <button class="btnn">Drama</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Farah Khan</span></div>
+                        <div class="f_b" id="f_b2">Star: Shah Rukh Khan</div>
+                        <div class="f_b" id="f_b4">Production: Red Chillies Entertainment</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 544cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec8" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/housefull4_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Housefull 4</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Housefull 4</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/housefull4_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Comedy</button>
+                            <button class="btnn">Action</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Sajid Kumar</span></div>
+                        <div class="f_b" id="f_b2">Star: Akshay Kumar</div>
+                        <div class="f_b" id="f_b4">Production: Star Studios</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 780cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec9" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/son_of_sardar_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Son of Sardaar</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Son of Sardaar</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/son_of_sardar_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Comedy</button>
+                            <button class="btnn">Action</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Ahan Shetty</span></div>
+                        <div class="f_b" id="f_b2">Star: Ajay Devgn</div>
+                        <div class="f_b" id="f_b4">Production: T - series</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 110cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec10" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/ram_jetu_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Ram Setu</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Ram Setu</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/ram_setu_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Adventure</button>
+                            <button class="btnn">Drama</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Deepak Yadav</span></div>
+                        <div class="f_b" id="f_b2">Star: Akshay Kumar</div>
+                        <div class="f_b" id="f_b4">Production: Yash Raj Film</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 80cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec11" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/jersey_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Jersey</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Jersey</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/jersey_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Action</button>
+                            <button class="btnn">Sports</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Arjun Shetty</span></div>
+                        <div class="f_b" id="f_b2">Star: Shahid Kapoor</div>
+                        <div class="f_b" id="f_b4">Production: Star Studios</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 120cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    </section>
+    <section id="sec12" class="sections">
+        <section id="film">
+            <div class="box" id="box1">
+                <img src="image/laal_singh_chhadha_1.png" alt="">
+            </div>
+            <div class="box" id="box2">
+                <h1 class="h-primary">Laal Singh Chhadha</h1>
+                <button id="watch" onclick="watch()">Watch Now</button>
+            </div>
+        </section>
+        <section id="film2">
+            <div class="film2-box" id="film-box1">
+                <h2 class="h-primary2">Laal Singh Chhadha</h2>
+                <div id="f_box">
+                    <div id="f_box1" class="f_b">
+                        <img src="image/laal_singh_chhadha_2.png" id="img2" alt="">
+                    </div>
+                    <div id="f_box2" class="f_b">
+                        <div class="f_b" id="f_b1">
+                            <button class="btnn">Comedy</button>
+                            <button class="btnn">Action</button>
+                        </div>
+                        <div class="f_b" id="f_b1">Writer: <span>Sunil Kapoor</span></div>
+                        <div class="f_b" id="f_b2">Star: Aamir Khan</div>
+                        <div class="f_b" id="f_b4">Production: T - Series</div>
+                        <div class="f_b" id="f_b3">Box Office Collection: 350cr </div>
+                        <div class="f_b" id="f_b5">MyMovie Pvt Ltd.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="film2-box" id="film-box2">
+                <div class="inside" id="inside1">
+                    <p class="heading"> MyMovie Ratings</p>
+                    <div><img src="image/star.png" id="star" alt="" srcset=""> <span name="f1" id="sub"
+                            class="success"></span>/10</div>
+                </div>
+                <div class="inside" id="inside2">
+                    <p class="heading"> Your Ratings</p>
+                    <button name="f2" onclick="click_rate(1)">Best</button>
+                    <button name="f2" onclick="click_rate(0.75)">Very Good</button>
+                    <button name="f2" onclick="click_rate(0.5)">Good</button>
+                    <button name="f2" onclick="click_rate(0.25)">Average</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="my.js"></script>
+
+</body>
+
+</html>
