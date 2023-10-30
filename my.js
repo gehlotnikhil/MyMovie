@@ -181,7 +181,7 @@ switch (movieName) {
 
 console.log("Exit");
 function sign () {
-  window.location.href = "Log.html";
+  window.location.href = "index.html";
 }
 function enable () {
   a = document.getElementById('new');
