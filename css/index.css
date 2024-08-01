@@ -1,0 +1,25 @@
+
+body{
+    background:url('../image/r.png') center/cover;
+  }
+      form.row.g-3.needs-validation {
+        color: white;
+        width: 50pc;
+        position: relative;
+        /* left: 206px; */
+        margin: 0pc auto;
+        top: 200px;
+      }
+  
+      #logo {
+        position: absolute;
+        width: 39pc;
+        margin: 0px 26%;
+        top: -84px;
+        height: 30pc;
+      }
+  
+      a {
+        text-decoration: none;
+        color: white;
+      }
