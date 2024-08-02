@@ -198,7 +198,7 @@ function jump(movie)
 }
 function watch()
 {
-  window.location.href = 'video/Bhajrangi bhaijaan full movie(360P).mp4';
+  window.location.href = 'video/earth.mp4';
 }
 
 no_of_user = 10;
