@@ -17,7 +17,7 @@ echo"1";
         die("connection to this database failed due to" . mysqli_connect_error());
     }
     // echo "<br>Success connecting to the db 1<br>";
-
+    
     // Collect post variables
     $first = $_POST['first']; 
     $last =  $_POST['last'];
@@ -47,7 +47,12 @@ echo"1";
     }
     // echo "Success connecting to the db 3";
     echo"3";
-
+    $response = [
+        "status" => "success",
+        "message" => "PHP script executed successfully"
+    ];
+    
+    echo json_encode($response);
     // Close the database connection
     $conn->close();
 // }
