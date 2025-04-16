@@ -14,7 +14,7 @@ https://drive.google.com/file/d/1q64UpAryNmtyRTW_dS-aHsmg4UaW0xWn/view?usp=drive
 
 ## Tech Stack
 
-**Client:** HTML, CSS
+**Client:** HTML, CSS, Bootstrap
 
 **Backend:** Javascript, PHP
 
